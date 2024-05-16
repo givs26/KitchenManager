@@ -1,49 +1,46 @@
 <template>
     <div class="header">
-       <img src="../assets/pictures/logo.png" class="image-header">
-        <div class="header-title">КУХНЯ</div>
+<!--       <div><img src="../assets/pictures/logo.png" class="image-header"></div>-->
+        <div class="header-title">{{HeaderTitle}}</div>
     </div>
 </template>
 
 <script>
+
+
     export default {
-        name: "HeaderApp"
+        name: "HeaderApp",
+        data(){
+            return{
+
+            }
+        },
+        props: {
+            HeaderTitle: null
+        }
     }
 </script>
 
 <style scoped>
 .header{
-    margin-right: auto;
-    margin-left: auto;
+    display: inline-flex;
+    margin-right: 5%;
+    margin-left: 5%;
     border-radius: 26px;
     background: #D9D9D9;
-    height: 196px;
+    height: 50px;
     width: 90%;
 
 
 }
 .header-title{
+    margin: auto;
     color: #8E5508;
-    position: absolute;
-    left: 45%;
-    right: auto;
-    top: 50px;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     font-family: Kaisei HarunoUmi;
-    font-size: 87px;
+    font-size: 20px;
     font-style: normal;
-    font-weight: 400;
-    line-height: normal;
+
 }
-    .image-header{
 
-        margin-left: 20px;
-        margin-top: 20px;
-        width: 250px;
-        height: 150px;
-
-        border-radius: 26px;
-
-        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    }
 </style>
